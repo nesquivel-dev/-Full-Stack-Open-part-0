@@ -19,7 +19,7 @@ sequenceDiagram
     server-->>browser: sends back HTML document
     deactivate server
 
-     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->browser: Sends back HTML document
     deactivate server
@@ -33,7 +33,7 @@ sequenceDiagram
     activate server
     server-->browser: Sends back main.js document
     deactivate server
-    Note right of browser JS script contains code that fetches data.json from the server.
+    Note right of browser JS script contains code that fetches data.json from the server
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server 
 
