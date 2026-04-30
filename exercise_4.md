@@ -12,7 +12,7 @@ sequenceDiagram
     Note right of browser: The payload is: "{content: "oh well, a test", date: "2026-04-06T19:25:15.286Z"}"
     server-->>browser: 
     deactivate server
-    Note left of browser: A note has been added to the bottom of the list.
+    Note left of browser: A note has been added to the bottom of the list b
    
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
