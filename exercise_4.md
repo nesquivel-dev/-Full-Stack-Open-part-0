@@ -40,7 +40,8 @@ sequenceDiagram
     server-->browser: Sends back all data.json document, that contains all notes
     Note right of browser [...,{"content": "oh well, a test","date": "2026-04-29T01:14:15.131Z"}]
     deactivate server
-    ```
+
+```
 
 
 
