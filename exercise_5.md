@@ -21,6 +21,7 @@ sequenceDiagram
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server 
     server-->>browser: Sends data.json file
+    deactivate server
     Note right of browser: A list of all of the notes saved on the server 
 
 
