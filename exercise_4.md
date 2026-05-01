@@ -9,15 +9,10 @@ sequenceDiagram
     Note left of browser: User types note and clicks save
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
-    Note right of browser: The payload is: "{content: "oh well, a test", date: "2026-04-06T19:25:15.286Z"}"
-    server-->>browser: 
+    Note right of browser: The payload is: "note=oh+well%2C+a+test"
+    server-->>browser: sends code 302 Found
     deactivate server
-    Note left of browser: A note has been added to the bottom of the list b
-   
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
-    activate server
-    server-->>browser: sends back HTML document
-    deactivate server
+    Note left of browser: A note has been added to the bottom of the list
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
