@@ -11,7 +11,4 @@ sequenceDiagram
     server-->>browser: Sends back code 201 Created
     deactivate server
     Note left of server: The response: {"message":"note created"}
-
-
-
 ```

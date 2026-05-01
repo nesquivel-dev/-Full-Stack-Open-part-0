@@ -7,7 +7,7 @@ sequenceDiagram
 
 
     Note left of browser: User types note and clicks save
-    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     Note right of browser: The payload is: "note=oh+well%2C+a+test"
     server-->>browser: sends code 302 Found
